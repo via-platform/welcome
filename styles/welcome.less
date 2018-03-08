@@ -1,0 +1,138 @@
+@import "variables";
+@import "ui-variables";
+
+.welcome
+{
+    display: flex;
+    flex-direction: column;
+
+    .thead
+    {
+        display: flex;
+        border-bottom: 1px solid @header-border-color;
+        background: @header-background-color;
+
+        .td
+        {
+            line-height: 24px;
+            flex: 1;
+            font-size: 11px;
+            color: @text-color-subtle;
+            padding: 0 10px;
+            text-align: right;
+
+            &:first-child
+            {
+                text-align: left;
+            }
+        }
+    }
+
+    .welcome-body
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+        flex: 1;
+
+        .logo
+        {
+            width: 72px;
+            height: 72px;
+            background: url('via://via-interface/images/wordmark-light.svg') center center no-repeat;
+            background-size: 70px auto;
+        }
+
+        .version
+        {
+            color: @text-color-subtle;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        .title
+        {
+            font-size: 15px;
+            max-width: 700px;
+            padding: 0 30px;
+            margin-top: 30px;
+            -webkit-font-smoothing: antialiased;
+            text-align: center;
+        }
+
+        .links
+        {
+            margin-top: 30px;
+            display: flex;
+
+            .link
+            {
+                margin: 0 10px;
+            }
+        }
+
+        .preference
+        {
+            margin-top: 50px;
+
+            label
+            {
+                font-size: 13px;
+                -webkit-font-smoothing: antialiased;
+                font-weight: 500;
+                color: @text-color-subtle;
+
+                input
+                {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .social
+        {
+            display: flex;
+            margin-top: 30px;
+
+            .link
+            {
+                width: 32px;
+                height: 32px;
+                background: #FFF;
+                opacity: 0.6;
+                transition: opacity ease 0.2s;
+
+                &.slack
+                {
+                    background: url('via://welcome/images/slack.svg') -9px -9px no-repeat;
+                    background-size: 50px auto;
+                }
+
+                &.telegram
+                {
+                    background: url('via://welcome/images/telegram.svg') 3px 4px no-repeat;
+                    background-size: 24px auto;
+                }
+
+                &.twitter
+                {
+                    background: url('via://welcome/images/twitter.svg') 4px 6px no-repeat;
+                    background-size: 25px auto;
+                }
+
+                &.reddit
+                {
+                    background: url('via://welcome/images/reddit.svg') 3px 3px no-repeat;
+                    background-size: 26px auto;
+                }
+
+                &:hover
+                {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

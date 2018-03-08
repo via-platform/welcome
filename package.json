@@ -1,0 +1,29 @@
+{
+  "name": "welcome",
+  "version": "0.0.0",
+  "description": "Via welcome screen with helpful links.",
+  "main": "./lib/main",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "via",
+    "accounts"
+  ],
+  "repository": "https://github.com/via-platform/welcome",
+  "author": "Dakota Gordon",
+  "engines": {
+    "via": "*"
+  },
+  "dependencies": {
+    "etch": "0.9.0"
+  },
+  "providedServices": {},
+  "configSchema": {
+    "showOnStartup": {
+      "type": "boolean",
+      "default": true,
+      "description": "Show welcome panes with useful information when opening a new Via window."
+    }
+  }
+}
