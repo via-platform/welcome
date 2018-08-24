@@ -16,9 +16,17 @@
     "via": "*"
   },
   "dependencies": {
-    "etch": "0.9.0"
+    "etch": "0.9.0",
+    "semver": "^5.5.1"
   },
   "providedServices": {},
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^0.1.0": "consumeStatusBar"
+      }
+    }
+  },
   "configSchema": {
     "showOnStartup": {
       "type": "boolean",

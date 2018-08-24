@@ -137,3 +137,31 @@
         }
     }
 }
+
+.welcome-update-available
+{
+    display: flex;
+    align-items: center;
+    background-size: 12px auto;
+    background-repeat: no-repeat;
+    font-weight: 700;
+
+    .welcome-update-status-icon
+    {
+        display: block;
+        margin-right: 6px;
+        width: 16px;
+        height: 16px;
+        background: url('via://welcome/images/update-round.svg') 0 0 no-repeat;
+        background-size: 34px auto;
+        opacity: 0.6;
+    }
+
+    &:hover
+    {
+        .welcome-update-status-icon
+        {
+            opacity: 1;
+        }
+    }
+}
